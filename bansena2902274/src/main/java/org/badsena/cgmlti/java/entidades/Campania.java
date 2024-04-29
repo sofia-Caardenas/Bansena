@@ -1,10 +1,10 @@
 package org.badsena.cgmlti.java.entidades;
-import java.time.DateTimeException;
+import java.time.LocalDateTime;
 public class Campania extends Habilitante{
     private String nombre;
-    private DateTimeException fechainicio;
-    private DateTimeException fechafin;
-    public Campania(double valor, String nombre, DateTimeException fechainicio, DateTimeException fechafin) {
+    private LocalDateTime fechainicio;
+    private LocalDateTime fechafin;
+    public Campania(double valor, String nombre, LocalDateTime fechainicio, LocalDateTime fechafin) {
         super(valor);
         this.nombre = nombre;
         this.fechainicio = fechainicio;
@@ -16,16 +16,16 @@ public class Campania extends Habilitante{
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public DateTimeException getFechainicio() {
+    public LocalDateTime getFechainicio() {
         return fechainicio;
     }
-    public void setFechainicio(DateTimeException fechainicio) {
+    public void setFechainicio(LocalDateTime fechainicio) {
         this.fechainicio = fechainicio;
     }
-    public DateTimeException getFechafin() {
+    public LocalDateTime getFechafin() {
         return fechafin;
     }
-    public void setFechafin(DateTimeException fechafin) {
+    public void setFechafin(LocalDateTime fechafin) {
         this.fechafin = fechafin;
     }
 
